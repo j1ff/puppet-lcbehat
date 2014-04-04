@@ -13,5 +13,12 @@ class lcbehat::lcbehat() {
   package { 'default-jre':
     ensure => "installed",
   }
-
+  file_line { 'sauce_username':
+    line => "export SAUCE_USERNAME=${sauce_username}",
+    path => '/home/vagrant/.bashrc',
+  }
+  file_line { 'sauce_access_key':
+    line => "export SAUCE_ACCESS_KEY=${sauce_access_key}",
+    path => '/home/vagrant/.bashrc',
+  }
 }
