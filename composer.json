@@ -6,10 +6,10 @@
     "behat/mink-selenium-driver": "*",
     "behat/mink-selenium2-driver": "*",
     "behat/mink-extension": "*",
-    "sauce/sausage": ">=0.5",
-    "sauce/connect": ">=3.0",
-    "drupal/drupal-extension": "*"
+    "drupal/drupal-extension": "*",
+    "dannytrue/phantomjs": "dev-master"
   },
+  "minimum-stability": "dev",
   "config": {
     "bin-dir": "/usr/bin/",
     "vendor-dir": "/usr/share/"
